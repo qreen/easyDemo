@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎登录企业信息系统快速开发平台</title>
+<link href="../../Content/customcss/style.css" rel="stylesheet" type="text/css" />
+    <script src="../../script/jquery.min.js"></script>
+<script src="../../script/custom/cloud.js" type="text/javascript"></script>
+<script language="javascript">
+	$(function(){
+    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+	$(window).resize(function(){  
+    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+    })  
+});  
+</script> 
+</head>
+
+<body style="background-color:#1c77ac; background-image:url(../../images/login/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+
+
+
+    <div id="mainBody">
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+    </div>  
+
+
+<div class="logintop">    
+    <span>欢迎登录企业信息系统快速开发平台</span>    
+    <ul>
+    <li><a href="#">帮助</a></li>
+    <li><a href="#">关于</a></li>
+    </ul>    
+    </div>
+
+    <form action="../Home/Index.html" method="post" role="form">
+    <div class="loginbody">
+    
+    <span class="systemlogo"></span> 
+       
+    <div class="loginbox">
+       
+    <ul>
+    <li><input class="loginuser" data-val="true" data-val-required="用户名 字段是必需的。" id="UserName" name="UserName" type="text" value="" required="required"/></li>
+    <li><input class="loginpwd" data-val="true" data-val-required="密码 字段是必需的。" id="Password" name="Password" type="password" required="required"/></li>
+        <li style="margin-bottom: 5px;"><input name="" type="submit" class="loginbtn" value="登录" /><label><input data-val="true" data-val-required="记住我? 字段是必需的。" id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />记住密码</label></li>
+        <li style="border: none; font-size: 14px;color:red; font-weight: bold; margin:0px;"><span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span><span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span></li>
+    </ul>
+    </div>
+    
+    </div>
+
+
+    </form>
+    <div class="loginbm">版权所有&copy;  2015  </div>
+	
+    
+<div style="display:none"></div>
+</body>
+</html>
